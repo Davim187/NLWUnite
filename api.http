@@ -1,0 +1,33 @@
+POST HTTP://localhost:3032/events
+Content-Type: application/json
+
+{
+  "title":123,
+  "details":"",
+  "maximumAttendees": 1
+}
+
+###
+
+POST HTTP://localhost:3032/events/a805e2e3-9639-4182-b8a7-eb9e84722e1a/attendees
+Content-Type: application/json
+
+{
+  "name":"Davi Morais",
+  "email":"davi3@gmail.com"
+}
+
+###
+
+GET HTTP://localhost:3032/events/a805e2e3-9639-4182-b8a7-eb9e84722e1a
+###
+
+GET HTTP://localhost:3032/attendees/4/badge
+
+
+###
+
+GET HTTP://localhost:3032/attendees/8/check-in
+###
+
+GET HTTP://localhost:3032/events/a805e2e3-9639-4182-b8a7-eb9e84722e1a/attendees?query=Davi
