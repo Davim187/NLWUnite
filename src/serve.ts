@@ -49,10 +49,6 @@ app.register(getAttendeeBadge)
 app.register(checkIn)
 app.register(getEventAttendees)
 
-
-
-
-
 app.listen({ port: 3032,host:'0.0.0.0' }).then(() => {
   console.log("HTTP server running!");
 });
